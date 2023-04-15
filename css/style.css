@@ -33,8 +33,6 @@
 
 body {
     position: relative;
-    max-width: 1660px;
-    min-width: 1660px;
     margin: 0 auto;
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: normal;
@@ -63,22 +61,26 @@ a:hover {
     text-decoration: underline;
 }
 
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
 .header {    
     position: relative;
-    height: 450px;
+    display: flex;
+    min-height: 450px;
     text-transform: uppercase;
+    background-image:  url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
 }
 
-.header__banner {
-    position: relative;  
-    height: 450px;
-    background-image:  url(../img/banner-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
-
-.header__banner::before {
+.header::before {
     content: '';
     position: absolute;
     display: block;
@@ -88,22 +90,25 @@ a:hover {
     opacity: 0.6;    
 }
 
-.header__panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.header-container {
     display: flex;
-    height: 68px;
-    margin: 0 245px;
+    flex-direction: column;
+    width: 1170px;
+    margin: 28px auto 0;
+    align-items: center;
+}
+
+.header__panel {
+    display: flex;
+    z-index: 1;
+    height: 40px;
+    width: 1170px;
     justify-content: space-between;
 }
 
 .header__logo {
     width: 179px;
     height: 40px;
-    margin-top: 28px;
-    margin-left: 3px;
     background-image:  url(../svg/noemi-logo.svg);
     background-repeat: no-repeat;
 }
@@ -112,9 +117,12 @@ a:hover {
     min-width: 462px;
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 45px;
-    margin-bottom: 14px;
-    justify-content: flex-end;  
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.header__menu ul {
+    display: flex;
 }
 
 .header__menu-item:nth-child(n + 2) {
@@ -133,14 +141,15 @@ a:hover {
 }
 
 .header__title {
-    position: absolute;
-    top: 175px;
-    left: 29%;
-    right: 29%;
+    display: flex;
+    width: 690px;
+    height: 100%;
+    z-index: 1;
     font-weight: bold;
     font-size: 45px;
     line-height: 1.7;
-    text-align: center;  
+    text-align: center;
+    align-items: center;  
 }
 
 .header__title h1 {
@@ -150,7 +159,10 @@ a:hover {
 }
 
 .trends {
+    max-width: 1660px;
+    min-width: 1660px;
     padding-top: 60px;
+    margin: 0 auto;
 }
 
 .trends__title, 
@@ -203,14 +215,11 @@ a:hover {
     position: relative;
     display: flex;
     width: 24.85%;
+    min-height: 320px;
     justify-content: center;
     align-items: flex-end;
-}
-
-.trends__article-box img {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover;   
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .trends__article-box::before {
@@ -223,26 +232,42 @@ a:hover {
     opacity: 0.6;
 }
 
+.trend__picture_one {
+    background-image:  url(../img/trend1.jpg);
+}
+
+.trend__picture_two {
+    background-image:  url(../img/trend2.jpg);
+}
+
+.trend__picture_three {
+    background-image:  url(../img/trend3.jpg);
+}
+
+.trend__picture_four {
+    background-image:  url(../img/trend4.jpg);
+}
+
 .trends__article-content {
-    position: absolute;
-    bottom: 16px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
     width: calc(100% - 40px);
     box-sizing: border-box;
     padding: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
 .trends__trend-category, 
 .post-list__post-category {
-    display: flex;
     flex-wrap: wrap;
     margin-bottom: 8px;
 }
 
-.trends__trend-category div, 
-.post-list__post-category div {
+.trends__trend-category li, 
+.post-list__post-category li {
     margin-right: 20px;
 }
 
@@ -275,7 +300,8 @@ a:hover {
 }
 
 .trends__trend-category a:hover, 
-.post-list__post-category a:hover, 
+.post-list__post-category a:hover,
+.latest-posts__post-title h3:hover, 
 .trends__article-title h3:hover {
     color: #b59f5b;
 }
@@ -283,7 +309,9 @@ a:hover {
 .main {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 245px;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
     padding-top: 60px;
 }
 
@@ -498,8 +526,8 @@ a:hover {
 
 .tags__container {
     display: flex;
-    width: 270px;
     flex-wrap: wrap;
+    width: 270px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -574,7 +602,6 @@ a:hover {
 
 .shop {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
 }
 
