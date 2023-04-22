@@ -16,6 +16,7 @@
 
             <div class="header__panel">
                 <a href="#"><div class="header__logo"></div></a>
+                <a href="#"><nav class="header__menu-icon"></nav></a>
                 <nav class="header__menu">
                     <ul>
                         <li class="header__menu-item"><a href="#">главная</a></li>
@@ -29,6 +30,7 @@
             </div>
 
             <div class="header__title">
+                <a href="#"><div class="header__logo-mobile"></div></a>
                 <h1>блог о творчестве, спорте, и образе жизни</h1>
             </div>
 
@@ -439,7 +441,12 @@
                 
                 <div class="shop__item-box">
                     <div class="shop__item-picture-box">
-                        <img src="img/shop-item-desk1.jpg" alt="Shop Item 1">
+                        <picture>
+                            <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                            <source srcset="img/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                            <source srcset="img/shop-item-desk1.jpg" media="(min-width: 1201px)">
+                            <img src="img/shop-item-desk1.jpg" alt="Shop Item 1" />
+                        </picture>
                     </div>
                     <div class="shop__item-text-content">
                         <div class="shop__item-title">
@@ -465,7 +472,12 @@
                 
                 <div class="shop__item-box">
                     <div class="shop__item-picture-box">
-                        <img src="img/shop-item-desk2.jpg" alt="Shop Item 2">
+                        <picture>
+                            <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                            <source srcset="img/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                            <source srcset="img/shop-item-desk2.jpg" media="(min-width: 1201px)">
+                            <img src="img/shop-item-desk2.jpg" alt="Shop Item 2" />
+                        </picture>                    
                     </div>
                     <div class="shop__item-text-content">
                         <div class="shop__item-title">
@@ -490,7 +502,12 @@
                 
                 <div class="shop__item-box">
                     <div class="shop__item-picture-box">
-                        <img src="img/shop-item-desk3.jpg" alt="Shop Item 3">
+                        <picture>
+                            <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 640px)">
+                            <source srcset="img/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+                            <source srcset="img/shop-item-desk3.jpg" media="(min-width: 1201px)">
+                            <img src="img/shop-item-desk3.jpg" alt="Shop Item 3" />
+                        </picture>   
                     </div>
                     <div class="shop__item-text-content">
                         <div class="shop__item-title">
@@ -528,7 +545,7 @@
             <div class="socials__icon"><a href="#"><img src="svg/tumblr-icon.svg" alt="tumblr"></a></div>
         </div>
 
-        <div class="copyrights">Copyright © 2009–2019 City Blog LLC.</div>
+        <div class="copyrights"><a href="#">Copyright © 2009–2019 City Blog LLC.</a></div>
     
     </footer>
 
