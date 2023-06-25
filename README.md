@@ -1,4 +1,7 @@
 # About
+![Static Badge](https://img.shields.io/badge/html5%20-%20%23000000?logo=HTML5)
+![Static Badge](https://img.shields.io/badge/css3%20-%20%23000000?logo=CSS3&logoColor=%231572B6)
+
 [Responsive website template](https://nfadeaway.github.io/responsive-website-template-01/)
 ## Preview
 ![preview](/sources/layouts.jpg)
