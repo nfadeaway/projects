@@ -2,7 +2,7 @@
 ![Static Badge](https://img.shields.io/badge/html5%20-%20%23000000?logo=HTML5)
 ![Static Badge](https://img.shields.io/badge/css3%20-%20%23000000?logo=CSS3&logoColor=%231572B6)
 
-[Курсовой проект курса "HTML и CSS: основы веб-верстки"](https://github.com/netology-code/fpymq-diploma/tree/01-logic)
+[Курсовая работа курса "HTML и CSS: основы веб-верстки"](https://github.com/netology-code/fpymq-diploma/tree/01-logic)
 
 [Реализованный адаптивный шаблон](https://nfadeaway.github.io/responsive-website-template-01/)
 ## Превью макета
